@@ -513,7 +513,7 @@ footer .social-media-link:focus{
 }
 
 .modal-form{   
-    padding: 16px 24px;
+    
 }
 
 .input-wrap{
@@ -564,6 +564,10 @@ footer .social-media-link:focus{
     fill: var(--primary-brand-color);
 }
 
+.textarea-wrap{
+    margin-bottom: 16px;
+}
+
 .modal-textarea{
     width: 100%;
     height: 120px;
@@ -574,22 +578,18 @@ footer .social-media-link:focus{
     border: 1px solid var(--modal-dark-color);
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-left: 16px;
+    padding: 8px 16px;
+    outline: transparent;
     resize: none;
     border-radius: 4px;
 }   
 
 .modal-textarea:focus{
-    transition: border 250ms cubic-bezier var(--pressed-state-color);
+    border-color: var(--pressed-state-color);
 }
 
 .policy-container{
     width: 100%;
-    align-items: baseline;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 117%;
-    letter-spacing: 0.04em;
     margin-top: 16px;
     margin-bottom: 24px;
 }
@@ -598,21 +598,14 @@ footer .social-media-link:focus{
     
 }
 
-
-.visually-hidden{
-/* visibility: hidden; */
-    /* pointer-events: none; */
-    /* position: absolute;  */
-}
-
-.policy-agreement{
+.label-policy{
+    font-weight: 400;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 117%;
     letter-spacing: 0.04em;
-    color: var(--light-slate);
 }
 
-.policy{
+.policy {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -624,14 +617,19 @@ footer .social-media-link:focus{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-privacy-checkbox:checked .policy{
+.user-privacy-checkbox:checked .policy {
     background-color: var(--pressed-state-color);
     border: none;
     fill: var(--light-color);
 }
 
+.privacy-link{
+    color: var(--primary-brand-color);
+}
+
 .send-button{
     display: block;
+    margin: 0 auto;
     border-radius: 4px;
     padding: 16px 32px;
     min-width: 169px;
@@ -641,12 +639,12 @@ footer .social-media-link:focus{
     background: var(--primary-brand-color);
     font-family: var(--font-family);
     font-weight: 500;
-        font-size: 16px;
-        line-height: 150%;
-        letter-spacing: 0.04em;
-        text-align: center;
-        color: var(--white-color);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-button:hover,
