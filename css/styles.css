@@ -516,9 +516,7 @@ footer .social-media-link:focus{
     padding: 16px 24px;
 }
 
-.inputs{
-    /* display: flex;
-    flex-direction: column; */
+.input-wrap{
     margin-bottom: 8px;
 }
 
@@ -532,7 +530,7 @@ footer .social-media-link:focus{
     margin-bottom: 4px;
 }
 
-.input-wrap{
+.complete-input{
     position: relative;
     margin-bottom: 8px;
 }
