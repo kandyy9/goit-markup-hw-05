@@ -522,7 +522,7 @@ footer .social-media-link:focus{
 
 .hide{
     opacity: 0;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .close-button{
