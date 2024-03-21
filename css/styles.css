@@ -436,7 +436,61 @@ footer .social-media-link:focus{
     background-color: var(--green);
 }
 
+.newsletter-section{
+    margin-left: 80px;
+}
+
+.newsletter-text{
+    color: var(--white-color);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.newsletter-form{
+    display: flex;
+    gap: 24px;
+}
+
+.newsletter-input{
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);;
+    border-radius: 4px;
+    color: var(--white-color);
+}
+
+.newsletter-submit{
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 165px;
+    height: 40px;
+    background-color: var(--primary-brand-color);
+    border: none;
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.send-icon{
+    margin-left: 16px;
+    fill: var(--white-color);
+}
+
 .modal-overlay{
+    opacity: 0;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -448,6 +502,7 @@ footer .social-media-link:focus{
 }
 
 .modal{
+    opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -623,6 +678,7 @@ footer .social-media-link:focus{
 
 .user-privacy-checkbox:checked + .label-policy .policy {
     background-color: var(--pressed-state-color);
+    fill: var(--light-color);
     border: none;
 }
 
